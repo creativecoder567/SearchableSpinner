@@ -3,25 +3,20 @@ package com.example.manishvishwakarma.searchablespinnermine;
 import android.app.Activity;
 import android.content.Context;
 import android.content.ContextWrapper;
-import android.content.DialogInterface;
 import android.content.res.TypedArray;
 import android.text.TextUtils;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ArrayAdapter;
-import android.widget.Spinner;
 import android.widget.SpinnerAdapter;
 import android.widget.Toast;
-
-import com.example.manishvishwakarma.searchablespinnermine.R;
-import com.example.manishvishwakarma.searchablespinnermine.SearchableListDialog;
 
 import java.util.ArrayList;
 import java.util.List;
 
 
-public class SearchableSpinner extends Spinner implements View.OnTouchListener,
+public class SearchableSpinner extends androidx.appcompat.widget.AppCompatSpinner implements View.OnTouchListener,
         SearchableListDialog.SearchableItem {
 
     String selectedItem;

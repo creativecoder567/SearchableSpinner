@@ -16,7 +16,8 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.SearchView;
+
+import androidx.appcompat.widget.SearchView;
 
 import java.io.Serializable;
 import java.util.List;
@@ -96,8 +97,18 @@ public class SearchableListDialog extends DialogFragment implements
         String strPositiveButton = _strPositiveButtonText == null ? "CLOSE" : _strPositiveButtonText;
         alertDialog.setPositiveButton(strPositiveButton, _onClickListener);
 
-        String strTitle = _strTitle == null ? "Select Item" : _strTitle;
-        alertDialog.setTitle(strTitle);
+       /* String strTitle = _strTitle == null ? "Select Item" : _strTitle;
+        alertDialog.setTitle(strTitle);*/
+
+        /*DisplayMetrics dm = new DisplayMetrics();
+//        rootView.getWindowManager().getDefaultDisplay().getMetrics(dm);
+        float dpi = 0;
+        dpi = (float) (dm.densityDpi / 160.0);
+        View view  =new View(rootView.getContext());
+        ViewGroup.LayoutParams params = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,
+                (int) (1 * dpi));
+        view.setLayoutParams(params);
+        alertDialog.setView(view);*/
 
         final AlertDialog dialog = alertDialog.create();
         dialog.getWindow().setSoftInputMode(WindowManager.LayoutParams

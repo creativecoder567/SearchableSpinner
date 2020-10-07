@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/SearchableSpinnerMine.iml" filepath="$PROJECT_DIR$/SearchableSpinnerMine.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/android-spinner-with-search-example.iml" filepath="$PROJECT_DIR$/.idea/modules/android-spinner-with-search-example.iml" group="android-spinner-with-search-example" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/android-spinner-with-search-example-app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/android-spinner-with-search-example-app.iml" group="android-spinner-with-search-example/app" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
